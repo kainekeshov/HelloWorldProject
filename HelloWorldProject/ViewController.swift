@@ -18,6 +18,26 @@ class ViewController: UIViewController {
         topView.layer.cornerRadius = 10
     }
 
-
+    @IBAction func plusButtonDidTapped() {
+        bottomView.layer.cornerRadius += 5
+        topView.layer.cornerRadius += 5
+        if bottomView.layer.cornerRadius >= 60 {
+            resetButtonDidTapped()
+        }
+    }
+    
+    @IBAction func minusButtonDidTapped() {
+        bottomView.layer.cornerRadius -= 5
+        topView.layer.cornerRadius -= 5
+        if bottomView.layer.cornerRadius == 0 {
+            resetButtonDidTapped()
+        }
+    }
+    
+    @IBAction func resetButtonDidTapped() {
+        bottomView.layer.cornerRadius = 10
+        topView.layer.cornerRadius = 10
+    }
+    
 }
 
