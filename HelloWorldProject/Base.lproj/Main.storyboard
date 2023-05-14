@@ -62,6 +62,7 @@
                     </view>
                     <connections>
                         <outlet property="greenLight" destination="iNk-1d-CDg" id="PjW-vk-ubi"/>
+                        <outlet property="nextButton" destination="VPZ-Vv-aiK" id="AEe-6c-LYi"/>
                         <outlet property="redLight" destination="rUb-SP-lb8" id="6hh-xc-TJc"/>
                         <outlet property="yelowLight" destination="pmy-ii-Hi4" id="9lU-dY-ldd"/>
                     </connections>

@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var redLight: UIView!
     @IBOutlet var yelowLight: UIView!
     @IBOutlet var greenLight: UIView!
+    @IBOutlet var nextButton: UIButton!
     
     //MARK: - Public Properties
     let defaultOpacity: Float = 0.3
@@ -22,6 +23,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nextButton.setTitle("START", for: .normal)
+        
         setDefaultSettings(to: redLight, opacity: defaultOpacity)
         setDefaultSettings(to: yelowLight, opacity: defaultOpacity)
         setDefaultSettings(to: greenLight, opacity: defaultOpacity)
@@ -29,6 +32,7 @@ class ViewController: UIViewController {
     
     //MARK: - IB Actions
     @IBAction func nextButtonDidTapped(_ sender: Any) {
+        nextButton.setTitle("NEXT", for: .normal)
         lightCount += 1
         switch lightCount {
         case 1:
