@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPZ-Vv-aiK">
-                                <rect key="frame" x="50" y="670" width="314" height="35"/>
+                                <rect key="frame" x="50" y="735" width="314" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="EGv-me-kcp"/>
                                 </constraints>
@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNk-1d-CDg">
-                                <rect key="frame" x="142" y="390" width="130" height="130"/>
+                                <rect key="frame" x="142" y="455" width="130" height="130"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="6v7-Ml-sue"/>
@@ -37,7 +37,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmy-ii-Hi4">
-                                <rect key="frame" x="142" y="240" width="130" height="130"/>
+                                <rect key="frame" x="142" y="305" width="130" height="130"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="9YH-4f-NfD"/>
@@ -45,7 +45,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUb-SP-lb8">
-                                <rect key="frame" x="142" y="90" width="130" height="130"/>
+                                <rect key="frame" x="142" y="155" width="130" height="130"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="dU3-Ys-Nj1"/>
@@ -57,7 +57,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VPZ-Vv-aiK" firstAttribute="top" secondItem="iNk-1d-CDg" secondAttribute="bottom" constant="150" id="2iE-qT-DEh"/>
-                            <constraint firstItem="iNk-1d-CDg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="DXR-DN-U9y"/>
+                            <constraint firstItem="iNk-1d-CDg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="65" id="DXR-DN-U9y"/>
                             <constraint firstItem="VPZ-Vv-aiK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="E0Z-8O-vSJ"/>
                             <constraint firstItem="rUb-SP-lb8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GD3-48-EHK"/>
                             <constraint firstItem="pmy-ii-Hi4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KYZ-lh-gC4"/>
