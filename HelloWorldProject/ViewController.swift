@@ -16,16 +16,15 @@ class ViewController: UIViewController {
     
     //MARK: - Public Properties
     let defaultOpacity: Float = 0.3
-    let defaultCornerRadius: CGFloat = 65
     var lightCount = 0
     
     //MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setDefaultSettings(to: redLight, opacity: defaultOpacity, cornerRadius: defaultCornerRadius)
-        setDefaultSettings(to: yelowLight, opacity: defaultOpacity, cornerRadius: defaultCornerRadius)
-        setDefaultSettings(to: greenLight, opacity: defaultOpacity, cornerRadius: defaultCornerRadius)
+        setDefaultSettings(to: redLight, opacity: defaultOpacity)
+        setDefaultSettings(to: yelowLight, opacity: defaultOpacity)
+        setDefaultSettings(to: greenLight, opacity: defaultOpacity)
     }
     
     //MARK: - IB Actions
@@ -41,11 +40,11 @@ class ViewController: UIViewController {
             lightCount = 0
         }
     }
-    
+
     //MARK: - Public Methods
-    func setDefaultSettings(to outlet: UIView, opacity: Float, cornerRadius: CGFloat) {
+    func setDefaultSettings(to outlet: UIView, opacity: Float) {
         outlet.layer.opacity = opacity
-        outlet.layer.cornerRadius = cornerRadius
+        outlet.layer.cornerRadius = outlet.frame.height / 2
     }
     func switchTheLight(from: UIView, to: UIView) {
         from.layer.opacity = 0.3

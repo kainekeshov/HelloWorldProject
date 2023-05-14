@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -14,14 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorldProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPZ-Vv-aiK">
-                                <rect key="frame" x="50" y="735" width="314" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="EGv-me-kcp"/>
-                                </constraints>
+                                <rect key="frame" x="50" y="695" width="290" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next"/>
                                 <connections>
@@ -29,42 +26,38 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNk-1d-CDg">
-                                <rect key="frame" x="142" y="455" width="130" height="130"/>
+                                <rect key="frame" x="148" y="381.66666666666669" width="94" height="93.666666666666686"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="6v7-Ml-sue"/>
-                                    <constraint firstAttribute="width" constant="130" id="waT-bg-RNb"/>
+                                    <constraint firstAttribute="width" secondItem="iNk-1d-CDg" secondAttribute="height" multiplier="1:1" id="NJ4-6p-s4H"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmy-ii-Hi4">
-                                <rect key="frame" x="142" y="305" width="130" height="130"/>
+                                <rect key="frame" x="148" y="267.66666666666669" width="94" height="94"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="9YH-4f-NfD"/>
-                                    <constraint firstAttribute="width" constant="130" id="NUz-Ar-Sp4"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUb-SP-lb8">
-                                <rect key="frame" x="142" y="155" width="130" height="130"/>
+                                <rect key="frame" x="148" y="154" width="94" height="93.666666666666686"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="dU3-Ys-Nj1"/>
-                                    <constraint firstAttribute="width" constant="130" id="yMO-Nt-8pv"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VPZ-Vv-aiK" firstAttribute="top" secondItem="iNk-1d-CDg" secondAttribute="bottom" constant="150" id="2iE-qT-DEh"/>
-                            <constraint firstItem="iNk-1d-CDg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="65" id="DXR-DN-U9y"/>
+                            <constraint firstItem="pmy-ii-Hi4" firstAttribute="centerX" secondItem="iNk-1d-CDg" secondAttribute="centerX" id="BO2-se-vVk"/>
                             <constraint firstItem="VPZ-Vv-aiK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="E0Z-8O-vSJ"/>
-                            <constraint firstItem="rUb-SP-lb8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GD3-48-EHK"/>
-                            <constraint firstItem="pmy-ii-Hi4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KYZ-lh-gC4"/>
-                            <constraint firstItem="iNk-1d-CDg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ujp-FW-hvK"/>
-                            <constraint firstItem="pmy-ii-Hi4" firstAttribute="top" secondItem="rUb-SP-lb8" secondAttribute="bottom" constant="20" id="kl5-fP-qf4"/>
-                            <constraint firstItem="iNk-1d-CDg" firstAttribute="top" secondItem="pmy-ii-Hi4" secondAttribute="bottom" constant="20" id="o7f-2m-UeZ"/>
+                            <constraint firstItem="rUb-SP-lb8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="107" id="Gow-Xf-WFI"/>
+                            <constraint firstItem="pmy-ii-Hi4" firstAttribute="width" secondItem="iNk-1d-CDg" secondAttribute="width" id="Ilf-5y-flf"/>
+                            <constraint firstItem="iNk-1d-CDg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Ml1-jc-Lpz"/>
+                            <constraint firstItem="iNk-1d-CDg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Q11-VH-224"/>
+                            <constraint firstItem="rUb-SP-lb8" firstAttribute="centerX" secondItem="pmy-ii-Hi4" secondAttribute="centerX" id="WBV-Du-DEy"/>
+                            <constraint firstItem="rUb-SP-lb8" firstAttribute="height" secondItem="pmy-ii-Hi4" secondAttribute="height" id="bcp-it-AbC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VPZ-Vv-aiK" secondAttribute="bottom" constant="80" id="eNb-iC-bKQ"/>
+                            <constraint firstItem="pmy-ii-Hi4" firstAttribute="height" secondItem="iNk-1d-CDg" secondAttribute="height" id="oC3-w5-iuh"/>
+                            <constraint firstItem="pmy-ii-Hi4" firstAttribute="top" secondItem="rUb-SP-lb8" secondAttribute="bottom" constant="20" id="uFd-uq-z6F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VPZ-Vv-aiK" secondAttribute="trailing" constant="50" id="xKr-6F-MMv"/>
+                            <constraint firstItem="iNk-1d-CDg" firstAttribute="top" secondItem="pmy-ii-Hi4" secondAttribute="bottom" constant="20" id="yED-1H-6KP"/>
+                            <constraint firstItem="rUb-SP-lb8" firstAttribute="width" secondItem="pmy-ii-Hi4" secondAttribute="width" id="zeN-Nb-5Q8"/>
                         </constraints>
                     </view>
                     <connections>
