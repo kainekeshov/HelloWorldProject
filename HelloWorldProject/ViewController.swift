@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet var bottomView: UIView!
     @IBOutlet var topView: UIView!
     
+    let cornerRadiusModificator = 3
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bottomView.layer.cornerRadius = 10
