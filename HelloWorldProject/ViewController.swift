@@ -33,14 +33,11 @@ class ViewController: UIViewController {
         lightCount += 1
         switch lightCount {
         case 1:
-            turnOnTheLight(redLight)
-            turnOffTheLight(greenLight)
+            switchTheLight(from: greenLight, to: redLight)
         case 2:
-            turnOnTheLight(yelowLight)
-            turnOffTheLight(redLight)
+            switchTheLight(from: redLight, to: yelowLight)
         default:
-            turnOnTheLight(greenLight)
-            turnOffTheLight(yelowLight)
+            switchTheLight(from: yelowLight, to: greenLight)
             lightCount = 0
         }
     }
@@ -50,12 +47,9 @@ class ViewController: UIViewController {
         outlet.layer.opacity = opacity
         outlet.layer.cornerRadius = cornerRadius
     }
-    func turnOnTheLight(_ light: UIView) {
-        light.layer.opacity = 1
+    func switchTheLight(from: UIView, to: UIView) {
+        from.layer.opacity = 0.3
+        to.layer.opacity = 1
     }
-    func turnOffTheLight( _ light: UIView) {
-        light.layer.opacity = defaultOpacity
-    }
-    
 }
 
