@@ -9,9 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var bottomView: UIView!
+    @IBOutlet var topView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        bottomView.layer.cornerRadius = 10
+        topView.layer.cornerRadius = 10
     }
 
 
