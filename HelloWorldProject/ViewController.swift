@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         redLight.layer.cornerRadius = redLight.frame.width / 2
         yelowLight.layer.cornerRadius = yelowLight.frame.width / 2
         greenLight.layer.cornerRadius = greenLight.frame.width / 2
+        
     }
     
     //MARK: - IB Actions
