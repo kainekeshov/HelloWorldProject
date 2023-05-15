@@ -16,18 +16,21 @@ class ViewController: UIViewController {
     @IBOutlet var nextButton: UIButton!
     
     //MARK: - Public Properties
-    let defaultOpacity: Float = 0.3
-    var lightCount = 0
+    private var lightCount = 0
     
     //MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         nextButton.setTitle("START", for: .normal)
-        
-        setDefaultSettings(to: redLight, opacity: defaultOpacity)
-        setDefaultSettings(to: yelowLight, opacity: defaultOpacity)
-        setDefaultSettings(to: greenLight, opacity: defaultOpacity)
+        redLight.alpha = 0.3
+        yelowLight.alpha = 0.3
+        greenLight.alpha = 0.3
+    }
+    
+    override func viewDidLayoutSubviews() {
+        redLight.layer.cornerRadius = redLight.frame.width / 2
+        yelowLight.layer.cornerRadius = yelowLight.frame.width / 2
+        greenLight.layer.cornerRadius = greenLight.frame.width / 2
     }
     
     //MARK: - IB Actions
@@ -46,13 +49,9 @@ class ViewController: UIViewController {
     }
 
     //MARK: - Public Methods
-    func setDefaultSettings(to outlet: UIView, opacity: Float) {
-        outlet.layer.opacity = opacity
-        outlet.layer.cornerRadius = outlet.frame.height / 2
-    }
-    func switchTheLight(from: UIView, to: UIView) {
-        from.layer.opacity = 0.3
-        to.layer.opacity = 1
+    private func switchTheLight(from: UIView, to: UIView) {
+        from.alpha = 0.3
+        to.alpha = 1
     }
 }
 
